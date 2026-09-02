@@ -1,0 +1,79 @@
+@media (max-width:900px){
+    nav{
+        flex-wrap: wrap;
+        height: auto;
+        padding: 0;
+    }
+    .lo{
+        height: 50px;
+    }
+    .srcbar {
+        width: 100%; /* Search bar spans the whole screen */
+        order: 5; /* Pushes the search bar to the bottom row of the nav */
+        margin-top: 2px;
+        margin-bottom: 5px;
+    }
+    .nav2option{
+        overflow-x: auto;
+        gap: 15px;
+        width: 100%;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        scrollbar-width: none;
+        scroll-behavior: smooth;
+    }
+    .today{
+        flex-wrap: nowrap;
+        flex-shrink: 0;
+    }
+
+    .more {
+        flex-wrap: wrap; /* Let cards drop to the next row */
+        height: auto; /* Remove the fixed 390px height */
+        gap: 20px;
+        padding: 0 10px;
+
+        margin-top: 10px;
+    }
+    .mm{
+        width: 45%;
+        margin-bottom: 20px;
+    }
+
+    .footerlink{
+        flex-wrap: wrap;
+    }
+    
+}
+
+@media(max-width:600px){
+    .mm{
+        width: auto;
+        margin-bottom: 20px;
+    }
+
+    .banner img {
+        height: 300px; 
+    }
+
+    .mmore{
+        margin-top: 0px;
+    }
+
+    .note{
+        margin-top: -40px;
+    }
+    .foot h2{
+        
+        text-align: center !important;
+        width: 100%;
+    }
+
+    .footer-col {
+        width: 100%; /* 1 column stacked on phones */
+        text-align: center; /* Center the text for mobile */
+
+        gap: 25px;
+    }
+
+}
