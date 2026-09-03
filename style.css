@@ -14,7 +14,7 @@ html,body{
 
 .logo{
     height: 65%;
-    cursor: pointer;
+    
   
     display: flex;
     align-items: center;
@@ -38,7 +38,7 @@ nav{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
+   
 
     height: 90%;
 
@@ -141,6 +141,12 @@ nav{
     color: #f8f4f8;
     font-weight: bold;
 }
+.lan:focus-visible{
+    border: none;
+}
+.lan option{
+    color: #0B1D33;
+}
 .lanlogo{
     color: #f8f4f8;
 }
@@ -170,7 +176,7 @@ nav{
     flex-direction: column;
     justify-content: center;
     align-items: start;
-
+    cursor: pointer;
     height: 90%;
     padding: 0 2px;
 }
@@ -181,6 +187,7 @@ nav{
     align-items: center;
     color: #f8f4f8;
     padding: 15px;
+    cursor: pointer;
 }
 .cart1{
     font-weight: bold;
@@ -585,10 +592,14 @@ footer{
 
 .desc{
     color: rgba(0, 0, 0,0.5);
+    padding: 10px 0px;
 }
 
 .hide{
     display: none;
 }
-
+.category{
+    font-size: 0.7rem;
+    color: gray;
+}
 
