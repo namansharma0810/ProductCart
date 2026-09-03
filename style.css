@@ -603,3 +603,8 @@ footer{
     color: gray;
 }
 
+.addcartbut{
+    width: auto;
+    padding: 10px;
+    margin-top: 10px;
+}

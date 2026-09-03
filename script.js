@@ -31,7 +31,8 @@ function displayProducts(products){
                <h2>${pro.title}</h2>
                <p class="desc">${pro.description}</p>
                <p class="price">$${pro.price}</p>
-               <p class="rating">⭐${pro.rating} / 5</p>`
+               <p class="rating">⭐${pro.rating} / 5</p>
+               <button class="butsignin addcartbut">Add to Cart</button>`
 
         productList.appendChild(div);
     }
