@@ -33,3 +33,10 @@ This project uses the DummyJSON Products API:
 
 ```text
 https://dummyjson.com/products
+
+
+## 👨‍💻 Author
+
+**Naman Sharma**
+
+GitHub: https://github.com/namansharma0810
