@@ -566,6 +566,8 @@ footer{
     cursor: pointer;
     background-color: rgba(22,102,243,0.05);
     height: auto;
+    position: relative;
+    padding-bottom: 120px;
 }
 
 .card img{
@@ -584,10 +586,15 @@ footer{
 .price{
     font-size: 1.5em;
     color: green;
+    position: absolute;
+    bottom: 80px;
 }
 
 .rating{
     font-size: 1.5em;
+    position: absolute;
+    bottom: 50px;
+    
 }
 
 .desc{
@@ -606,5 +613,6 @@ footer{
 .addcartbut{
     width: auto;
     padding: 10px;
-   margin-top: 10px; 
+   position: absolute;
+   bottom: 10px;
 }
