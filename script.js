@@ -2,18 +2,21 @@ const inp=document.querySelector(".sa");
 const srcbtn=document.querySelector(".src");
 const mainpage=document.querySelector(".mmore");
 const banner=document.querySelector(".banner");
-const searchresultcont=document.querySelector(".search-results-container")
+const searchresultcont=document.querySelector(".search-results-container");
+const cartcont=document.querySelector(".cart-cont");
 
 
 
 const API_URL = "https://dummyjson.com/products?limit=300";
 const productList = document.querySelector(".productList");
 searchresultcont.classList.add("hide");
+cartcont.classList.add("hide");
 
 
 let products = [];
 let filterProducts = [];
 let mainProducts=[];
+let addcart=[];
 
 srcbtn.addEventListener("click",(e)=>{
     srcproduct();
@@ -35,9 +38,16 @@ function displayProducts(products){
                <button class="butsignin addcartbut">Add to Cart</button>`
 
         productList.appendChild(div);
-    }
+        const button = div.querySelector(".addcartbut");
+
+        button.addEventListener("click", () => {
+           addcart.push(pro);
+
+        });
+    }    
     mainpage.classList.add("hide");
     banner.classList.add("hide");
+    cartcont.classList.add("hide");
     searchresultcont.classList.remove("hide");
     
 }
@@ -172,3 +182,19 @@ categorySelect.addEventListener("change", (e) => {
         srcproduct();
     }
 });
+
+const cart=document.querySelector(".cart");
+cart.addEventListener("click",()=>{
+    
+    mainpage.classList.add("hide");
+    banner.classList.add("hide");
+    searchresultcont.classList.add("hide");
+    cartcont.classList.remove("hide");
+    
+})
+
+
+
+
+
+
